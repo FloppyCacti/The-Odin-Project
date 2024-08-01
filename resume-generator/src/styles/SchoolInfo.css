@@ -1,0 +1,17 @@
+div#educationContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(194, 203, 211);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+div#educationContainer > div {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+div#educationContainer h4 {
+  margin: 0px auto;
+}

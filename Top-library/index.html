@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script src="main.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="header">
+      <h1 class="title">Library</h1>
+    </div>
+    <button class="add-book"><strong>Add Book</strong></button>
+    <div class="book-container"></div>
+    <dialog id="bookForm">
+      <form>
+        <label for="bookTitle">Title</label>
+        <input type="text" name="bookTitle" id="bookTitle" required />
+        <label for="bookAuthor">Author</label>
+        <input type="text" name="bookAuthor" id="bookAuthor" required />
+        <label for="bookPages">Num of Pages</label>
+        <input type="number" name="bookPages" id="bookPages" required />
+        <div class="readOrNot">
+          <label for="haveRead">Have you read the book?</label>
+          <input type="checkbox" name="haveRead" id="haveRead" />
+        </div>
+        <div class="formButton">
+          <button id="cancelBtn" value="cancel" formmethod="dialog">
+            Cancel
+          </button>
+          <button id="confirmBtn" value="default">Confirm</button>
+        </div>
+      </form>
+    </dialog>
+  </body>
+</html>

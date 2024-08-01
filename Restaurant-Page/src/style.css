@@ -1,0 +1,23 @@
+*{
+    text-align: center;
+}
+
+li.button{
+    list-style-type: none;
+    display: inline-block;
+    padding: 0px 100px 0px 100px;
+}
+
+#content{
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+}
+
+#content div{
+    padding: 10px;
+    width: 500px;
+    background-color: antiquewhite;
+}

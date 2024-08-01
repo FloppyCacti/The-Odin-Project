@@ -1,0 +1,19 @@
+{
+  "name": "dropdown_menu",
+  "version": "1.0.0",
+  "description": "This package allows you to make dropdown menu that can be triggred by clicking or hovering over the button.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FloppyCacti/dropdown-menu.git"
+  },
+  "author": "Parth Patel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FloppyCacti/dropdown-menu/issues"
+  },
+  "homepage": "https://github.com/FloppyCacti/dropdown-menu#readme"
+}

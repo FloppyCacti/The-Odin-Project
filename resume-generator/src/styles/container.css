@@ -1,0 +1,24 @@
+div.container {
+  background-color: rgb(226, 235, 243);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+div.container > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  gap: 10px;
+}
+
+div.container h2 {
+  margin: 5px 0;
+}
+
+div.container input {
+  border: 1px solid rgba(148, 147, 147, 0.427);
+  background: rgba(255, 255, 255, 0.436);
+  height: 20px;
+  margin: 5px 0;
+}

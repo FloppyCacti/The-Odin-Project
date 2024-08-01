@@ -1,0 +1,72 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    margin: 0;
+    background-color: #FFF5E0;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 5% 5% 5% 95%;
+    grid-template-columns: 100%;
+    align-items: center;
+    justify-items: center;
+}
+
+.header{
+    grid-row: 1;
+    width: 100%;
+    background-color: #BB2525;
+    box-shadow: 0px 5px 0px #141E46;
+    text-align: center;
+    color: white;
+}
+
+.add-book{
+    grid-row: 3;
+    border-style: none;
+    background-color: #BB2525;
+    border-radius: 5px;
+    color: #FFF5E0;
+    height: 40px;
+    width: 100px;
+    box-shadow: 5px 5px 0px #141E46;
+}
+
+.book-container{
+    grid-row: 4;
+    background-color: #FF6969;
+    width: 80%;
+    border-radius: 15px;
+    height: 75%;
+    box-shadow: 10px 10px 0px #141E46;
+    margin: 50px 0 50px 0;
+    align-self: flex-start;
+}
+
+.book-container > div{
+    padding: 10px;
+}
+
+dialog{
+    border-radius: 20px;
+}
+
+form{
+    width: 200px;
+}
+
+form > input{
+    margin-bottom: 15px;
+}
+
+.readOrNot{
+    margin-bottom: 10px;
+}
+
+.formButton{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}

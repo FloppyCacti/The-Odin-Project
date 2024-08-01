@@ -1,0 +1,93 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+
+#gameboard-container {
+  display: flex;
+  flex-direction: row;
+  margin: 0px auto;
+  gap: 100px;
+}
+
+#playerBoardContainer,
+#computerBoardContainer {
+  height: 500px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+div.cell {
+  height: 50px;
+  width: 50px;
+  box-sizing: border-box;
+  background-color: antiquewhite;
+  border: 1px solid rgb(253, 247, 239);
+}
+
+div.enemy.cell:hover {
+  filter: brightness(0.95);
+}
+
+div.hit {
+  background-color: rgb(228, 117, 117);
+  pointer-events: none;
+}
+
+div.hit-ship,
+div.ship-cell {
+  background-color: rgb(184, 212, 156);
+  pointer-events: none;
+}
+
+div.ship-cell.hit-ship {
+  background-color: aqua;
+}
+
+dialog.show {
+  display: block;
+  border-radius: 10px;
+  text-align: center;
+}
+
+dialog.hide {
+  display: none;
+}
+
+dialog ul {
+  list-style: none;
+}
+
+#showWinner {
+  display: none;
+}
+
+.error {
+  color: red;
+}
+
+ul {
+  padding: 0;
+}
+
+li > div {
+  width: 250px;
+  text-align: right;
+  margin-left: auto;
+}
+
+li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}

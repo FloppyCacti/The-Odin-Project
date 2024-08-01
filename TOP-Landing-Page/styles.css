@@ -1,0 +1,198 @@
+body{
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: "Ubuntu", sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #F9FAF8;
+}
+
+ul{
+    padding: 0px;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    background-color: #1f2937;
+    height: 350px;
+}
+
+.content{
+    background-color: #e5e7eb;
+}
+
+.footer{
+    background-color: #1f2937;
+}
+
+.header > .top {
+    display: flex;
+    justify-content: space-around;
+}
+
+.header > .bottom{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+}
+
+.header > .top > .right-links > .links{
+    display: flex;
+    gap: 25px;
+}
+
+.header > .top > .left-links > h3{
+    margin: 0;
+    color: #F9FAF8;
+}
+
+.header > .top > .left-links{
+    align-self: center;
+}
+
+.header > .bottom > .left-links > h1{
+    width: 350px;
+    color:#F9FAF8;
+    margin: 0px;
+}
+
+.header > .bottom > .left-links > p{
+    width: 400px;
+    color:#F9FAF8;
+    margin: 0px;
+    margin-top: 10px;
+}
+
+.header > .bottom > .left-links > .source{
+    width: 400px;
+    text-align: end;
+    font-size: small;
+}
+
+.header > .bottom > .left-links > button{
+    background-color: #3882f6;
+    font-size: 20px;
+    color: #e5e7eb;
+    border: none;
+    border-radius: 5px;
+    padding: 0 30px;
+    margin-top: 10px;
+}
+
+.footer > p{
+    color:#F9FAF8;
+    font-size: 12px;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+}
+
+.content{
+    flex: 1;
+    background-color: #F9FAF8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.content > .information{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.information > .images {
+    display: flex;
+    gap: 20px;
+}
+
+.images-info > p {
+    color: #7c7c7c;
+    text-align: center;
+    width: 200px;
+}
+
+.information > h2 {
+    color:#1f2937;
+}
+
+.images-info > img {
+    width: auto;
+    height: 150px;
+    border-radius: 5px;
+    border-color: #3882f6;
+    border-style: solid;
+    border-width: 2px;
+}
+
+.content > .quote {
+    flex: 1;
+    display: flex;
+    background-color: #e5e7eb;
+    align-self: stretch;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote > .text {
+    display: flex;
+    flex-direction: column;
+}
+
+.quote > .text > h4 {
+    text-align: end;
+}
+
+.content > .banner{
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.banner > .container {
+    display: flex;
+    height: 100px;
+    background-color: #3882f6;
+    align-items: center;
+    border-radius: 5px;
+    width: 700px;
+    justify-content: center;
+    gap: 100px;
+}
+
+.banner > .container > button{
+    background-color: transparent;
+    border-color: #F9FAF8;
+    padding: 3px 25px;
+    border-radius: 5px;
+    color: #F9FAF8;
+    border-style: solid;
+}
+
+.banner > .container > .text > p,
+.banner > .container > .text > h4{
+    margin: 0px;
+    color: #F9FAF8;
+}
+
+.banner > .container > .text > p{
+    font-size: 12px;
+}

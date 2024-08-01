@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div>
+      <div id="content">
+        <div id="other-info">
+          <div>
+            <h3>Humidity:</h3>
+            <h3 id="humidity"></h3>
+          </div>
+          <div id="uv-container">
+            <h3>UV:</h3>
+            <h3 id="uv"></h3>
+          </div>
+        </div>
+        <div id="temperature">
+          <div>
+            <h1 id="tempC"></h1>
+          </div>
+          <div>
+            <h1 id="tempF"></h1>
+          </div>
+        </div>
+        <div id="condition"></div>
+      </div>
+      <form>
+        <div id="user-input">
+          <label name="location" id="location-label">Location: </label>
+          <input type="text" for="location" id="location-input" />
+          <button id="submit">Submit</button>
+          <span id="show-error"></span>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+body{
+    margin: 0px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.back-home{
+    background-color: antiquewhite;
+    border-style: none;
+    min-width: 150px;
+    min-height: 30px;
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+h1{
+    font-size: 120px;
+    font-family: 'Bebas Neue';
+}
+
+a{
+    padding: 10px 30px;
+    background-color: #596D48;
+    color: #ffffff;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;    
+}

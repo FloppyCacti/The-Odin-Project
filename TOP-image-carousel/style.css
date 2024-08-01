@@ -1,0 +1,30 @@
+*{
+    text-align: center;
+}
+
+#images{
+    display: flex;
+    flex-direction: row;
+}
+
+#images img{
+    height: 800px;
+    display: none;
+}
+
+#images img.visible{
+    display: block;
+}
+
+#image-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#dot-nav button {
+    background-color: white;
+}
+#dot-nav button.active {
+    background-color: black;
+}

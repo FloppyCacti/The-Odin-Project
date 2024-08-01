@@ -1,0 +1,33 @@
+div#resume-container {
+  border: 1px solid #000000;
+  border-radius: 10px;
+  padding: 10px;
+  min-width: 500px;
+  height: 800px;
+}
+
+div.resume-horizontal {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+div#resume-container h1,
+div#resume-container h3 {
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+}
+
+hr {
+  height: 1px;
+  width: 90%;
+  border-radius: 10px;
+  background-color: #000000;
+}
+
+h2#section-title {
+  margin: 0px auto;
+}

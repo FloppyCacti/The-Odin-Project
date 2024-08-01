@@ -1,0 +1,193 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    margin: 0;
+    display: grid;
+    grid-template-rows: 100px auto;
+    background-color: #f2f2f7;
+}
+
+header{
+    grid-row: 1;
+    background-color: #007aff;
+    border-bottom: 10px solid #ff5959;
+}
+
+#container{
+    display: flex;
+    flex-direction: row;
+    padding: 100px 200px 100px 200px;
+    gap: 10px;
+}
+
+#sideBar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+    border-radius: 10px;
+    padding: 50px 10px 50px 10px;
+    box-shadow: 0px 0px 20px 10px rgba(204, 204, 204, 0.274);
+}
+
+#listContent{
+    flex: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 10px rgba(204, 204, 204, 0.274);
+}
+
+#categoryContainer{
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.sidebarButtons{
+    font-size: 20px;
+    border: none;
+    background-color: #f2f2f7;
+    border-radius: 6px;
+}
+
+.sidebarButtons:hover{
+    background-color: rgba(204, 204, 204, 0.274);
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    gap: 10px;
+}
+
+dialog{
+    border-radius: 10px;
+    border: none;
+}
+
+#categoryButtonContainer{
+    display: flex;
+    flex-direction: row;
+}
+
+#categoryElement{
+    flex: 4;
+    text-align: left;
+}
+
+#addCategoryButton{
+    width: 100%;
+    padding: 10px;
+}
+
+#listContainer{
+    width: 95%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;  
+}
+
+.listContentHeader{
+    width:100%;
+    height: 70px;
+    display: flex;
+    gap:10px;
+}
+
+.taskLabel{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(204, 204, 204);
+    font-size: 55px;
+    border-radius: 10px;
+}
+
+.taskButton{
+    height: 100%;
+    width: 80px;
+    background-color: rgb(204, 204, 204);
+    border: none;
+    border-radius: 10px;
+}
+
+.taskButton:hover{
+    background-color: rgb(184, 184, 184);
+}
+
+#listFormButtons{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    gap: 5px;
+}
+
+#taskToDoContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #007bff27;
+    border-radius: 10px;
+}
+
+.taskContainer{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.taskCompletedContainer{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+#taskCompletedContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #ff595923;
+    border-radius: 10px;
+}
+
+#taskToDoHeaderLabel{
+    box-sizing: border-box;
+    padding-left: 10px;
+    background-color: #007bff63;
+}
+
+#taskCompletedHeaderLabel{
+    box-sizing: border-box;
+    padding-left: 10px;
+    background-color: #ff000086;
+}
+
+#otherInfoInLabel{
+    padding: 10px;
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 20px;
+    text-align: right;
+}
+
+.taskTitleLabel{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#otherInfoInLabel > #taskPriority{
+    border-radius: 5px;
+    margin-left: auto;
+    width: fit-content;
+    box-sizing: border-box;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+}

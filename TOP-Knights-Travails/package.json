@@ -1,0 +1,12 @@
+{
+  "name": "top-knights-travails",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Parth",
+  "license": "ISC",
+  "description": "Find the shortest possible path from one pointer to another"
+}

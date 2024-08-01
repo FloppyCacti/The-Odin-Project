@@ -1,0 +1,157 @@
+body {
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  padding: 30px 0px;
+  margin-bottom: auto;
+  position: relative;
+}
+
+div#header-rotate {
+  position: absolute;
+  top: -80vh;
+  left: -50vw;
+  transform: rotate(-10deg);
+  width: 200vw;
+  height: 100vh;
+  background-color: rgb(119, 185, 255);
+}
+
+header div#header-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+header div#about-div {
+  width: 60%;
+  background-color: white;
+  box-shadow: 2px 1px 20px 1px rgba(105, 105, 105, 0.38);
+  padding-left: 10px;
+}
+
+header h3 {
+  font-weight: normal;
+  padding: 0px;
+}
+
+header img {
+  width: auto;
+  height: 300px;
+  flex-shrink: 0;
+  box-shadow: -2px 1px 20px 1px rgb(133, 133, 133);
+}
+
+main {
+  margin: 10px auto 20px auto;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main h1 {
+  align-self: flex-start;
+  margin: 0px;
+}
+
+main > div:first-of-type {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 790px;
+}
+
+div.animal-div {
+  width: 250px;
+  height: 360px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(114, 153, 143);
+}
+
+div.animal-div > img {
+  width: 250px;
+  height: 200px;
+  object-fit: cover;
+  object-position: 50% 40%;
+}
+
+div.animal-div > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+div.animal-div > div > button {
+  height: 20px;
+  width: 20px;
+}
+
+div.animal-div > h3 {
+  margin: 0px;
+  padding-bottom: 50px;
+  font-weight: normal;
+}
+
+div.animal-div > div,
+h3 {
+  padding: 0px 10px 0px 10px;
+}
+
+footer {
+  margin-top: auto;
+}
+
+footer > div {
+  padding: 30px;
+  background-color: antiquewhite;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+div#contact-image > img {
+  height: 300px;
+  width: auto;
+  flex-shrink: 0;
+}
+
+footer h3 {
+  font-weight: normal;
+}
+
+@media (max-width: 600px) {
+  main > div:first-of-type,
+  main > h1 {
+    width: 300px;
+  }
+  main h1 {
+    padding-left: 50px;
+  }
+
+  footer > div {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  main > div:first-of-type,
+  main h1 {
+    width: 600px;
+  }
+  main h1 {
+    padding-left: 78px;
+  }
+}

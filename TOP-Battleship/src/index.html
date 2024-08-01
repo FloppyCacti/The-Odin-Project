@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Battleship</title>
+  </head>
+  <body>
+    <h1>Battleship</h1>
+    <div id="gameboard-container"></div>
+    <button id="resetGame">Reset Game</button>
+    <dialog class="show">
+      <div id="showWinner"></div>
+      <form id="shipForm">
+        <ul>
+          <li id="carrier-input">
+            <label for="carrier">carrier:</label>
+            <div>
+              <input type="number" min="0" max="9" placeholder="y pos" required />
+              <input type="number" min="0" max="9" placeholder="x pos" required />
+              <select id="carrier-dropdown" name="carrier-orientation" required>
+                <option value="vertical">vertical</option>
+                <option value="horizontal">horizontal</option>
+              </select>
+            </div>
+            <span class="error"></span>
+          </li>
+          <li id="battleship-input">
+            <label for="battleship">battleship:</label>
+            <div>
+              <input type="number" min="0" max="9" required />
+              <input type="number" min="0" max="9" required />
+              <select id="battleship-dropdown" name="battleship-orientation" required>
+                <option value="vertical">vertical</option>
+                <option value="horizontal">horizontal</option>
+              </select>
+            </div>
+            <span class="error"></span>
+          </li>
+          <li id="cruiser-input">
+            <label for="cruiser">cruiser:</label>
+            <div>
+              <input type="number" min="0" max="9" required />
+              <input type="number" min="0" max="9" required />
+              <select id="cruiser-dropdown" name="cruiser-orientation" required>
+                <option value="vertical">vertical</option>
+                <option value="horizontal">horizontal</option>
+              </select>
+            </div>
+            <span class="error"></span>
+          </li>
+          <li id="submarine-input">
+            <label for="submarine">submarine:</label>
+            <div>
+              <input type="number" min="0" max="9" required />
+              <input type="number" min="0" max="9" required />
+              <select id="submarine-dropdown" name="submarine-orientation" required>
+                <option value="vertical">vertical</option>
+                <option value="horizontal">horizontal</option>
+              </select>
+            </div>
+            <span class="error"></span>
+          </li>
+          <li id="destroyer-input">
+            <label for="destroyer">destroyer:</label>
+            <div>
+              <input type="number" min="0" max="9" required />
+              <input type="number" min="0" max="9" required />
+              <select id="destroyer-dropdown" name="destroyer-orientation" required>
+                <option value="vertical">vertical</option>
+                <option value="horizontal">horizontal</option>
+              </select>
+            </div>
+            <span class="error"></span>
+          </li>
+        </ul>
+        <button type="submit" id="startGame">Play</button>
+        <button id="randomBoard">Random</button>
+      </form>
+    </dialog>
+  </body>
+</html>
