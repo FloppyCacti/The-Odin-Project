@@ -53,7 +53,7 @@ function App() {
   return (
     <>
       <div className="App">
-        <h1>Pokémon List</h1>
+        <h1>Pokémon Memory Game</h1>
         <ul>
           {pokemonObjContainer.map((pokemon, index) => (
             <li key={index}>
