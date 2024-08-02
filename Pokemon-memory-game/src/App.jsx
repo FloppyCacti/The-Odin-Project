@@ -66,7 +66,6 @@ function App() {
     pokemonObjContainer[index].hit++;
     if (pokemonObjContainer[index].hit < 2) {
       setScore((prev) => prev + 1);
-      console.log("Score: " + score);
       shuffle();
     } else {
       if (score > maxScore) {
@@ -79,12 +78,12 @@ function App() {
     }
   };
 
-  useEffect(() => {
-    console.log("maxScore: " + maxScore);
-  }, [maxScore]);
   return (
     <div className="App">
       <h1>Pokémon Memory Game</h1>
+      <h2>
+        Score: {score} Max Score: {maxScore}
+      </h2>
       <ul>
         {pokemonObjContainer.map((pokemon, index) => (
           <li
