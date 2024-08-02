@@ -22,6 +22,8 @@ const link = "https://pokeapi.co/api/v2/pokemon/";
 
 function App() {
   const [pokemonObjContainer, setPokemonObjContainer] = useState([]);
+  const [score, setScore] = useState(0);
+  const [maxScore, setMaxScore] = useState(0);
 
   useEffect(() => {
     const fetchPokemonData = async () => {
@@ -62,9 +64,24 @@ function App() {
   // Add pokemon's hit
   const updateHit = (index) => {
     pokemonObjContainer[index].hit++;
-    console.log(pokemonObjContainer[index]);
+    if (pokemonObjContainer[index].hit < 2) {
+      setScore((prev) => prev + 1);
+      console.log("Score: " + score);
+      shuffle();
+    } else {
+      if (score > maxScore) {
+        setMaxScore(score);
+      }
+      setScore(0);
+      pokemonObjContainer.map((pokemon) => {
+        pokemon.hit = 0;
+      });
+    }
   };
 
+  useEffect(() => {
+    console.log("maxScore: " + maxScore);
+  }, [maxScore]);
   return (
     <div className="App">
       <h1>Pokémon Memory Game</h1>
@@ -75,7 +92,6 @@ function App() {
             className="cell"
             onClick={() => {
               updateHit(index);
-              shuffle();
             }}
           >
             <h2>{pokemon.name}</h2>
