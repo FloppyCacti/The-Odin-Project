@@ -1,0 +1,33 @@
+#root {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+header {
+  background-color: rgb(164, 185, 208);
+  height: 100px;
+  justify-self: flex-start;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header > a > img {
+  padding: 0 10px;
+  margin-left: 10px;
+  width: 80px;
+  background-color: white;
+}
+
+#content {
+  min-height: calc(100vh - 100px - 50px);
+}
+
+footer {
+  background-color: rgb(164, 185, 208);
+  height: 50px;
+  justify-self: flex-end;
+}
