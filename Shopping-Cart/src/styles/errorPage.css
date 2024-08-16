@@ -1,0 +1,13 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#error-content {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-items: center;
+}
