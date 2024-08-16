@@ -12,6 +12,13 @@ body {
   align-items: center;
 }
 
+#button-container {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
 ul {
   padding: 0;
 }
