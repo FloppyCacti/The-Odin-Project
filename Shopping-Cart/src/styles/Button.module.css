@@ -14,5 +14,5 @@
 .button:hover {
   color: black;
   background-color: rgb(164, 185, 208);
-  transform: scale(1.1); /* Directly apply the scale transformation */
+  transform: scale(1.1);
 }
