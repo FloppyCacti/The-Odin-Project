@@ -17,18 +17,31 @@ header {
   padding: 0 10px;
 }
 
-header > a {
+#homeButton {
   display: flex;
-  margin-top: 15px !important;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
-header > a > img {
+a {
+  display: flex;
+  margin-top: 15px !important;
+  font-size: 90px;
+  color: black;
+}
+
+a > img {
   box-sizing: border-box;
   padding: 0 10px;
   width: 90px;
   background-color: white;
   border: 5px solid black;
   border-radius: 10px;
+}
+
+#cartLogo > img {
+  width: 70px;
 }
 
 #content {
