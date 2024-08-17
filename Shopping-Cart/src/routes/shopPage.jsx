@@ -14,7 +14,7 @@ export default function ShopPage() {
           </Link>
           <Link to="/">Home</Link>
         </div>
-        <Link id="cartLogo" className={style.button} to="cart">
+        <Link id="cartLogo" className={style.button} to="/cart">
           <img src={cartImg} />
         </Link>
       </header>
