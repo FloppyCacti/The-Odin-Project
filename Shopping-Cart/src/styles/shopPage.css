@@ -24,7 +24,12 @@
   border: 1px solid black;
 }
 
+#categories > h2 {
+  margin: 0;
+}
+
 #categories > ul {
+  margin: 0;
   display: flex;
   font-size: 20px;
   flex-direction: column;
