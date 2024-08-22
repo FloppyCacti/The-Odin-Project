@@ -18,6 +18,10 @@
   align-items: center;
 }
 
+#search-bar > label {
+  font-weight: bold;
+}
+
 #search-bar > input {
   border-radius: 10px;
   height: 20px;
@@ -26,6 +30,7 @@
 
 #categories > h2 {
   margin: 0;
+  font-size: 30px;
 }
 
 #categories > ul {
