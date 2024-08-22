@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import "../styles/shopPage.css";
+import "../styles/pageTemplate.css";
 import logoImg from "../assets/logo.svg";
 import cartImg from "../assets/shopping-cart-logo.svg";
 import style from "../styles/Button.module.css";
