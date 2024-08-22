@@ -1,144 +1,134 @@
 {
-    "books": {
-        "the mist by stephen king": {
-            "img": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1331317781i/813214.jpg",
-            "title": "The Mist",
-            "author": "Stephen King",
-            "rate": "3.94",
-            "price": "9.99",
-            "genres": [
-                "Horror",
-                "Fiction",
-                "Thriller",
-                "Fantasy",
-                "Science Fiction",
-                "Mystery",
-                "Paranormal"
-            ]
-        },
-        "catch 22 by joseph heller": {
-            "img": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1677798927i/6860652.jpg",
-            "title": "Catch 22 by Joseph Heller",
-            "author": "Novel Units",
-            "rate": "3.83",
-            "price": "9.99",
-            "genres": [
-                "Fiction"
-            ]
-        },
-        "frankenstein by shelley": {
-            "img": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1355033075i/13779506.jpg",
-            "title": "Frankenstein by Mary Shelley: A Dark Graphic Novel",
-            "author": "Sergio A. Sierra",
-            "rate": "3.87",
-            "price": "9.99",
-            "genres": [
-                "Fiction",
-                "Classics",
-                "Graphic Novels",
-                "Horror",
-                "Science Fiction",
-                "Comics",
-                "Fantasy"
-            ]
-        },
-        "1984 by george orwell": {
-            "img": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1380700268i/18282117.jpg",
-            "title": "1984: George Orwell",
-            "author": "SparkNotes",
-            "rate": "4.29",
-            "price": "9.99",
-            "genres": [
-                "Classics",
-                "Fiction",
-                "Science Fiction",
-                "Literature",
-                "Dystopia",
-                "Reference"
-            ]
-        },
-        "harry potter by jk rowling": {
-            "img": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1446647226i/27425945.jpg",
-            "title": "Harry Potter and the Sorcerer's Stone (Harry Potter, Book 1): By J.K. Rowling | The Complete Summary & Analysis",
-            "author": "bookworm",
-            "rate": "4.37",
-            "price": "9.99",
-            "genres": []
-        },
-        "the great gatsby by f scott fitzgerald": {
-            "img": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1356483091i/14476341.jpg",
-            "title": "The Great Gatsby",
-            "author": "F. Scott Fitzgerald",
-            "rate": "3.93",
-            "price": "9.99",
-            "genres": [
-                "Fiction",
-                "School",
-                "Historical Fiction",
-                "Romance",
-                "Literature",
-                "Novels",
-                "Read For School"
-            ]
-        },
-        "moby dick by herman melville": {
-            "img": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1484314219i/33849839.jpg",
-            "title": "Moby Dick - Herman Melville PB",
-            "author": "Ramji Lall",
-            "rate": "3.91",
-            "price": "9.99",
-            "genres": [
-                "Classics",
-                "Fiction"
-            ]
-        },
-        "blindness by jose saramago": {
-            "img": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1695836529i/134546636.jpg",
-            "title": "Blindness by Saramago, Jose (1998) Hardcover",
-            "author": "Jos\u00e9 Saramago",
-            "rate": "4.17",
-            "price": "9.99",
-            "genres": [
-                "Fiction",
-                "Dystopia",
-                "Science Fiction",
-                "Classics",
-                "Novels",
-                "Literature",
-                "Portugal"
-            ]
-        },
-        "crime and punishment by fyodor dostoevsky": {
-            "img": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1559330506i/46117596.jpg",
-            "title": "Crime And Punishment: Fyodor Dostoevsky's Exploration of Guilt and Redemption",
-            "author": "Fyodor Dostoevsky",
-            "rate": "4.27",
-            "price": "9.99",
-            "genres": [
-                "Fiction",
-                "Russia",
-                "Literature",
-                "Russian Literature",
-                "Philosophy",
-                "Novels",
-                "Crime"
-            ]
-        },
-        "odyssey by homer": {
-            "img": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1502134935i/2523661.jpg",
-            "title": "The Odyssey of Homer",
-            "author": "Elizabeth Vandiver",
-            "rate": "4.44",
-            "price": "9.99",
-            "genres": [
-                "Mythology",
-                "Classics",
-                "Nonfiction",
-                "History",
-                "Audiobook",
-                "Literature",
-                "Ancient History"
-            ]
-        }
+  "books": {
+    "01": {
+      "img": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1331317781i/813214.jpg",
+      "title": "The Mist",
+      "author": "Stephen King",
+      "rate": "3.94",
+      "price": "9.99",
+      "genres": [
+        "Horror",
+        "Fiction",
+        "Thriller",
+        "Fantasy",
+        "Science Fiction",
+        "Mystery",
+        "Paranormal"
+      ]
+    },
+    "02": {
+      "img": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1677798927i/6860652.jpg",
+      "title": "Catch 22 by Joseph Heller",
+      "author": "Novel Units",
+      "rate": "3.83",
+      "price": "9.99",
+      "genres": ["Fiction"]
+    },
+    "03": {
+      "img": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1355033075i/13779506.jpg",
+      "title": "Frankenstein by Mary Shelley: A Dark Graphic Novel",
+      "author": "Sergio A. Sierra",
+      "rate": "3.87",
+      "price": "9.99",
+      "genres": [
+        "Fiction",
+        "Classics",
+        "Graphic Novels",
+        "Horror",
+        "Science Fiction",
+        "Comics",
+        "Fantasy"
+      ]
+    },
+    "04": {
+      "img": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1380700268i/18282117.jpg",
+      "title": "1984: George Orwell",
+      "author": "SparkNotes",
+      "rate": "4.29",
+      "price": "9.99",
+      "genres": [
+        "Classics",
+        "Fiction",
+        "Science Fiction",
+        "Literature",
+        "Dystopia"
+      ]
+    },
+    "05": {
+      "img": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1446647226i/27425945.jpg",
+      "title": "Harry Potter and the Sorcerer's Stone (Harry Potter, Book 1): By J.K. Rowling | The Complete Summary & Analysis",
+      "author": "bookworm",
+      "rate": "4.37",
+      "price": "9.99",
+      "genres": []
+    },
+    "06": {
+      "img": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1356483091i/14476341.jpg",
+      "title": "The Great Gatsby",
+      "author": "F. Scott Fitzgerald",
+      "rate": "3.93",
+      "price": "9.99",
+      "genres": [
+        "Fiction",
+        "Historical Fiction",
+        "Romance",
+        "Literature",
+        "Novels"
+      ]
+    },
+    "07": {
+      "img": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1484314219i/33849839.jpg",
+      "title": "Moby Dick - Herman Melville PB",
+      "author": "Ramji Lall",
+      "rate": "3.91",
+      "price": "9.99",
+      "genres": ["Classics", "Fiction"]
+    },
+    "08": {
+      "img": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1695836529i/134546636.jpg",
+      "title": "Blindness by Saramago, Jose (1998) Hardcover",
+      "author": "Jos\u00e9 Saramago",
+      "rate": "4.17",
+      "price": "9.99",
+      "genres": [
+        "Fiction",
+        "Dystopia",
+        "Science Fiction",
+        "Classics",
+        "Novels",
+        "Literature",
+        "Portugal"
+      ]
+    },
+    "09": {
+      "img": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1559330506i/46117596.jpg",
+      "title": "Crime And Punishment: Fyodor Dostoevsky's Exploration of Guilt and Redemption",
+      "author": "Fyodor Dostoevsky",
+      "rate": "4.27",
+      "price": "9.99",
+      "genres": [
+        "Fiction",
+        "Literature",
+        "Russian Literature",
+        "Philosophy",
+        "Novels",
+        "Crime"
+      ]
+    },
+    "10": {
+      "img": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1502134935i/2523661.jpg",
+      "title": "The Odyssey of Homer",
+      "author": "Elizabeth Vandiver",
+      "rate": "4.44",
+      "price": "9.99",
+      "genres": [
+        "Mythology",
+        "Classics",
+        "Nonfiction",
+        "History",
+        "Literature",
+        "Ancient History"
+      ]
     }
+  }
 }
