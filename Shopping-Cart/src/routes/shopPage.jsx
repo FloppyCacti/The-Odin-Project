@@ -5,12 +5,19 @@ import cartImg from "../assets/shopping-cart-logo.svg";
 import style from "../styles/Button.module.css";
 import "../styles/shopPage.css";
 import books from "../assets/book_data.json";
+import { useEffect, useState } from "react";
 
 export default function ShopPage() {
-  const categories = () => {
+  const [bookAmount, setBookAmount] = useState(0);
+  const [bookContainer, setBookContainer] = useState([]);
+  const [genreList, setGenreList] = useState([]);
+  const [genreCheckedList, setGenreCheckedList] = useState(
+    new Array(10).fill(false)
+  );
+
+  useEffect(() => {
     const list = [];
     for (const [key, book] of Object.entries(books.books)) {
-      console.log(`Processing book with ID: ${key}`, book);
       const genres = book["genres"];
       genres.forEach((genre) => {
         if (genre && !list.includes(genre)) {
@@ -18,10 +25,22 @@ export default function ShopPage() {
         }
       });
     }
-    return list;
-  };
+    setGenreList(list.sort());
+  }, []);
 
-  const genreList = categories().sort();
+  const updateCheckedState = (index) => {
+    const checkedCategoryNames = [];
+    const tempArr = [...genreCheckedList];
+    tempArr[index] = !tempArr[index];
+
+    tempArr.forEach((category, n) => {
+      if (category) {
+        checkedCategoryNames.push(genreList[n]);
+      }
+    });
+
+    setGenreCheckedList(tempArr);
+  };
 
   return (
     <>
@@ -46,16 +65,23 @@ export default function ShopPage() {
           <div id="categories">
             <h2>Categories</h2>
             <ul>
-              {genreList.map((genre, id) => (
-                <li key={id}>
-                  <input type="checkbox" id={`checkbox-${id}`}></input>
-                  <label htmlFor={`checkbox-${id}`}>{genre}</label>
+              {genreList.map((genre, index) => (
+                <li key={index}>
+                  <input
+                    type="checkbox"
+                    id={`checkbox-${index}`}
+                    onClick={() => updateCheckedState(index)}
+                  ></input>
+                  <label htmlFor={`checkbox-${index}`}>{genre}</label>
                 </li>
               ))}
             </ul>
           </div>
         </div>
-        <div id="main"></div>
+        <div id="main">
+          <h2>Result {bookAmount} out of 10</h2>
+          <ul id="book-container"></ul>
+        </div>
       </div>
       <footer></footer>
     </>
