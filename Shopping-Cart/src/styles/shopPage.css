@@ -50,6 +50,7 @@
   padding: 10px;
 }
 
-#book-container > h2 {
+#main > h2 {
+  padding: 10px;
   margin: 0;
 }
