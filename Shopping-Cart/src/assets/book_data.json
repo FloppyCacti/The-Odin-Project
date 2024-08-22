@@ -58,20 +58,12 @@
             ]
         },
         "harry potter by jk rowling": {
-            "img": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1694855815i/132106839.jpg",
-            "title": "(Harry Potter and the Philosopher's Stone: 1/7 (Harry Potter 1)) [By: Rowling, J.K.] [Sep, 2014]",
-            "author": "J.K. Rowling",
-            "rate": "4.47",
+            "img": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1446647226i/27425945.jpg",
+            "title": "Harry Potter and the Sorcerer's Stone (Harry Potter, Book 1): By J.K. Rowling | The Complete Summary & Analysis",
+            "author": "bookworm",
+            "rate": "4.37",
             "price": "9.99",
-            "genres": [
-                "Fantasy",
-                "Fiction",
-                "Young Adult",
-                "Magic",
-                "Childrens",
-                "Middle Grade",
-                "Audiobook"
-            ]
+            "genres": []
         },
         "the great gatsby by f scott fitzgerald": {
             "img": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1356483091i/14476341.jpg",
@@ -101,12 +93,20 @@
             ]
         },
         "blindness by jose saramago": {
-            "img": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1481127461i/33285536.jpg",
-            "title": "Blindness by Jos\u00e9 Saramago (Book Analysis): Complete Summary and Book Analysis",
-            "author": "Bright Summaries",
-            "rate": "3.39",
+            "img": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1695836529i/134546636.jpg",
+            "title": "Blindness by Saramago, Jose (1998) Hardcover",
+            "author": "Jos\u00e9 Saramago",
+            "rate": "4.17",
             "price": "9.99",
-            "genres": []
+            "genres": [
+                "Fiction",
+                "Dystopia",
+                "Science Fiction",
+                "Classics",
+                "Novels",
+                "Literature",
+                "Portugal"
+            ]
         },
         "crime and punishment by fyodor dostoevsky": {
             "img": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1559330506i/46117596.jpg",
@@ -125,19 +125,19 @@
             ]
         },
         "odyssey by homer": {
-            "img": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1711957706i/1381.jpg",
-            "title": "The Odyssey",
-            "author": "Homer",
-            "rate": "3.81",
+            "img": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1502134935i/2523661.jpg",
+            "title": "The Odyssey of Homer",
+            "author": "Elizabeth Vandiver",
+            "rate": "4.44",
             "price": "9.99",
             "genres": [
-                "Fiction",
-                "Poetry",
                 "Mythology",
                 "Classics",
-                "Fantasy",
-                "School",
-                "Literature"
+                "Nonfiction",
+                "History",
+                "Audiobook",
+                "Literature",
+                "Ancient History"
             ]
         }
     }
