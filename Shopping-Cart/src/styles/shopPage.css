@@ -45,3 +45,11 @@
   width: 20px;
   margin-right: 10px;
 }
+
+#book-container {
+  padding: 10px;
+}
+
+#book-container > h2 {
+  margin: 0;
+}
