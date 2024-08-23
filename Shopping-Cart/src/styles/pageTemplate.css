@@ -9,7 +9,6 @@
 header {
   background-color: #ffffff;
   min-height: 120px;
-  justify-self: flex-start;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -47,6 +46,7 @@ a > img {
 
 #content {
   flex: 1;
+  overflow: auto;
 }
 
 footer {
