@@ -52,12 +52,54 @@
   flex-direction: column;
 }
 
-#book-container {
-  padding: 10px;
-  height: 100%;
-}
-
 #main > h2 {
   padding: 10px;
   margin: 0;
+}
+
+#book-container {
+  padding: 0px 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+li.book-info {
+  height: 300px;
+  width: 100px;
+  padding: 10px 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  border-radius: 10px;
+  background-color: white;
+  border: 2px solid black;
+}
+
+div.book-title-price {
+  display: flex;
+  flex-direction: row;
+}
+
+div.book-title-author {
+  text-align: left;
+}
+
+li.book-info img {
+  width: 100px;
+  height: auto;
+  border: 2px solid black;
+}
+
+li.book-info h3,
+li.book-info h4 {
+  margin: 0;
+}
+
+li.book-info h4 {
+  color: grey;
+  font-weight: 500;
 }
