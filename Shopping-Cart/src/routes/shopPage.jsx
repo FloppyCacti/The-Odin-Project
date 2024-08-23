@@ -80,7 +80,23 @@ export default function ShopPage() {
         </div>
         <div id="main">
           <h2>Result {bookAmount} out of 10</h2>
-          <ul id="book-container"></ul>
+          <ul id="book-container">
+            {Object.values(books.books).map((book) => {
+              // if(!genreCheckedList.length <= 0){}
+              return (
+                <li className="book-info" key={book.title}>
+                  <img src={book.img} />
+                  <div className="book-title-price">
+                    <div className="book-title-author">
+                      <h3>{book.title}</h3>
+                      <h4>by {book.author}</h4>
+                    </div>
+                    <h3>${book.price}</h3>
+                  </div>
+                </li>
+              );
+            })}
+          </ul>
         </div>
       </div>
       <footer></footer>
