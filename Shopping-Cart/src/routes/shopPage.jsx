@@ -13,6 +13,7 @@ export default function ShopPage() {
   const [genreCheckedList, setGenreCheckedList] = useState(
     new Array(10).fill(false)
   );
+  const [checkedCategoryNames, setCheckedCategoryNames] = useState([]);
 
   useEffect(() => {
     const list = [];
@@ -28,17 +29,19 @@ export default function ShopPage() {
   }, []);
 
   const updateCheckedState = (index) => {
-    const checkedCategoryNames = [];
+    const checkedCategoryNamesTemp = [];
     const tempArr = [...genreCheckedList];
     tempArr[index] = !tempArr[index];
 
     tempArr.forEach((category, n) => {
       if (category) {
-        checkedCategoryNames.push(genreList[n]);
+        checkedCategoryNamesTemp.push(genreList[n]);
       }
     });
 
+    setCheckedCategoryNames(checkedCategoryNamesTemp);
     setGenreCheckedList(tempArr);
+    console.log(checkedCategoryNames, checkedCategoryNamesTemp);
   };
 
   return (
