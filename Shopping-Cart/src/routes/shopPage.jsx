@@ -9,6 +9,7 @@ import { useEffect, useState } from "react";
 
 export default function ShopPage() {
   const [bookResultAmount, setBookResultAmount] = useState(0);
+  const [bookContainer, setBookContainer] = useState([]);
   const [genreList, setGenreList] = useState([]);
   const [genreCheckedList, setGenreCheckedList] = useState(
     new Array(10).fill(false)
@@ -41,8 +42,47 @@ export default function ShopPage() {
 
     setCheckedCategoryNames(checkedCategoryNamesTemp);
     setGenreCheckedList(tempArr);
-    console.log(checkedCategoryNames, checkedCategoryNamesTemp);
   };
+
+  useEffect(() => {
+    const tempBookContainer = [];
+
+    if (checkedCategoryNames.length > 0) {
+      Object.values(books.books).forEach((book) => {
+        const bookGenre = new Set(book.genres);
+        if (checkedCategoryNames.every((ele) => bookGenre.has(ele))) {
+          tempBookContainer.push(
+            <li className="book-info" key={book.title}>
+              <img src={book.img} alt={book.title} />
+              <div className="book-title-price">
+                <div className="book-title-author">
+                  <h3>{book.title}</h3>
+                  <h4>by {book.author}</h4>
+                </div>
+                <h3>${book.price}</h3>
+              </div>
+            </li>
+          );
+        }
+      });
+    } else {
+      Object.values(books.books).map((book) => {
+        tempBookContainer.push(
+          <li className="book-info" key={book.title}>
+            <img src={book.img} />
+            <div className="book-title-price">
+              <div className="book-title-author">
+                <h3>{book.title}</h3>
+                <h4>by {book.author}</h4>
+              </div>
+              <h3>${book.price}</h3>
+            </div>
+          </li>
+        );
+      });
+    }
+    setBookContainer(tempBookContainer);
+  }, [checkedCategoryNames]);
 
   return (
     <>
@@ -82,23 +122,7 @@ export default function ShopPage() {
         </div>
         <div id="main">
           <h2>Result {bookResultAmount} out of 10</h2>
-          <ul id="book-container">
-            {Object.values(books.books).map((book) => {
-              // if(!genreCheckedList.length <= 0){}
-              return (
-                <li className="book-info" key={book.title}>
-                  <img src={book.img} />
-                  <div className="book-title-price">
-                    <div className="book-title-author">
-                      <h3>{book.title}</h3>
-                      <h4>by {book.author}</h4>
-                    </div>
-                    <h3>${book.price}</h3>
-                  </div>
-                </li>
-              );
-            })}
-          </ul>
+          <ul id="book-container">{bookContainer}</ul>
         </div>
       </div>
       <footer></footer>
