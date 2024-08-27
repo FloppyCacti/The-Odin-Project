@@ -8,8 +8,7 @@ import books from "../assets/book_data.json";
 import { useEffect, useState } from "react";
 
 export default function ShopPage() {
-  const [bookAmount, setBookAmount] = useState(0);
-  const [bookContainer, setBookContainer] = useState([]);
+  const [bookResultAmount, setBookResultAmount] = useState(0);
   const [genreList, setGenreList] = useState([]);
   const [genreCheckedList, setGenreCheckedList] = useState(
     new Array(10).fill(false)
@@ -79,7 +78,7 @@ export default function ShopPage() {
           </div>
         </div>
         <div id="main">
-          <h2>Result {bookAmount} out of 10</h2>
+          <h2>Result {bookResultAmount} out of 10</h2>
           <ul id="book-container">
             {Object.values(books.books).map((book) => {
               // if(!genreCheckedList.length <= 0){}
