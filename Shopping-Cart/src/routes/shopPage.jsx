@@ -8,7 +8,7 @@ import books from "../assets/book_data.json";
 import { useEffect, useState } from "react";
 
 export default function ShopPage() {
-  const [bookResultAmount, setBookResultAmount] = useState(0);
+  const [bookResultAmount, setBookResultAmount] = useState(10);
   const [bookContainer, setBookContainer] = useState([]);
   const [genreList, setGenreList] = useState([]);
   const [genreCheckedList, setGenreCheckedList] = useState(
@@ -82,6 +82,7 @@ export default function ShopPage() {
       });
     }
     setBookContainer(tempBookContainer);
+    setBookResultAmount(tempBookContainer.length);
   }, [checkedCategoryNames]);
 
   return (
