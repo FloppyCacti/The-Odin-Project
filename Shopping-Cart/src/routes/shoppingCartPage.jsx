@@ -14,10 +14,7 @@ export default function ShoppingCartPage() {
           <Link to="/">Home</Link>
         </div>
       </header>
-      <div id="content">
-        <div id="sidebar"></div>
-        <div id="main"></div>
-      </div>
+      <div id="content"></div>
       <footer></footer>
     </>
   );
