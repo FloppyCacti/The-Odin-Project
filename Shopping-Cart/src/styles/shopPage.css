@@ -88,6 +88,10 @@ div.book-title-author {
   text-align: left;
 }
 
+li.book-info {
+  height: 330px;
+}
+
 li.book-info img {
   width: 100px;
   height: auto;
@@ -102,4 +106,8 @@ li.book-info h4 {
 li.book-info h4 {
   color: grey;
   font-weight: 500;
+}
+
+div.book-title-price {
+  height: 200px;
 }
