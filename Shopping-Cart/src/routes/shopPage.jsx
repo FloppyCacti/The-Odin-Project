@@ -61,6 +61,7 @@ export default function ShopPage() {
                 </div>
                 <h3>${book.price}</h3>
               </div>
+              <button className={style.button}>Add to Cart</button>
             </li>
           );
         }
@@ -77,6 +78,7 @@ export default function ShopPage() {
               </div>
               <h3>${book.price}</h3>
             </div>
+            <button className={style.button}>Add to Cart</button>
           </li>
         );
       });
