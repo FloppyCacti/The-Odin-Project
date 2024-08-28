@@ -5,7 +5,8 @@ import cartImg from "../assets/shopping-cart-logo.svg";
 import style from "../styles/Button.module.css";
 import "../styles/shopPage.css";
 import books from "../assets/book_data.json";
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
+import { CartContext } from "../CartContext.jsx";
 
 export default function ShopPage() {
   const [bookResultAmount, setBookResultAmount] = useState(10);
@@ -15,6 +16,7 @@ export default function ShopPage() {
     new Array(10).fill(false)
   );
   const [checkedCategoryNames, setCheckedCategoryNames] = useState([]);
+  const { cartItems, setCartItems } = useContext(CartContext);
 
   useEffect(() => {
     const list = [];
@@ -48,7 +50,7 @@ export default function ShopPage() {
     const tempBookContainer = [];
 
     if (checkedCategoryNames.length > 0) {
-      Object.values(books.books).forEach((book) => {
+      Object.values(books.books).forEach((book, index) => {
         const bookGenre = new Set(book.genres);
         if (checkedCategoryNames.every((ele) => bookGenre.has(ele))) {
           tempBookContainer.push(
@@ -61,13 +63,20 @@ export default function ShopPage() {
                 </div>
                 <h3>${book.price}</h3>
               </div>
-              <button className={style.button}>Add to Cart</button>
+              <button
+                className={style.button}
+                onClick={() => {
+                  updateCart(book);
+                }}
+              >
+                Add to Cart
+              </button>
             </li>
           );
         }
       });
     } else {
-      Object.values(books.books).map((book) => {
+      Object.values(books.books).map((book, index) => {
         tempBookContainer.push(
           <li className="book-info" key={book.title}>
             <img src={book.img} />
@@ -78,7 +87,14 @@ export default function ShopPage() {
               </div>
               <h3>${book.price}</h3>
             </div>
-            <button className={style.button}>Add to Cart</button>
+            <button
+              className={style.button}
+              onClick={() => {
+                updateCart(book);
+              }}
+            >
+              Add to Cart
+            </button>
           </li>
         );
       });
@@ -86,6 +102,10 @@ export default function ShopPage() {
     setBookContainer(tempBookContainer);
     setBookResultAmount(tempBookContainer.length);
   }, [checkedCategoryNames]);
+
+  const updateCart = (book) => {
+    setCartItems((prev) => [...prev, book]);
+  };
 
   return (
     <>
