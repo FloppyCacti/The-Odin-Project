@@ -5,7 +5,7 @@
       "title": "The Mist",
       "author": "Stephen King",
       "rate": "3.94",
-      "price": "9.99",
+      "price": "7.99",
       "genres": [
         "Horror",
         "Fiction",
@@ -29,7 +29,7 @@
       "title": "Frankenstein",
       "author": "Sergio A. Sierra",
       "rate": "3.87",
-      "price": "9.99",
+      "price": "12.99",
       "genres": [
         "Fiction",
         "Classics",
@@ -45,7 +45,7 @@
       "title": "1984: George Orwell",
       "author": "SparkNotes",
       "rate": "4.29",
-      "price": "9.99",
+      "price": "14.99",
       "genres": [
         "Classics",
         "Fiction",
@@ -59,7 +59,7 @@
       "title": "Harry Potter and the Sorcerer's Stone",
       "author": "bookworm",
       "rate": "4.37",
-      "price": "9.99",
+      "price": "11.99",
       "genres": []
     },
     "06": {
@@ -67,7 +67,7 @@
       "title": "The Great Gatsby",
       "author": "F. Scott Fitzgerald",
       "rate": "3.93",
-      "price": "9.99",
+      "price": "10.99",
       "genres": [
         "Fiction",
         "Historical Fiction",
@@ -81,7 +81,7 @@
       "title": "Moby Dick",
       "author": "Ramji Lall",
       "rate": "3.91",
-      "price": "9.99",
+      "price": "34.99",
       "genres": ["Classics", "Fiction"]
     },
     "08": {
@@ -89,7 +89,7 @@
       "title": "Blindness",
       "author": "Jos\u00e9 Saramago",
       "rate": "4.17",
-      "price": "9.99",
+      "price": "5.99",
       "genres": [
         "Fiction",
         "Dystopia",
@@ -120,7 +120,7 @@
       "title": "The Odyssey of Homer",
       "author": "Elizabeth Vandiver",
       "rate": "4.44",
-      "price": "9.99",
+      "price": "7.99",
       "genres": [
         "Mythology",
         "Classics",
