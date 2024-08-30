@@ -2,8 +2,11 @@ import { Link } from "react-router-dom";
 import "../styles/pageTemplate.css";
 import style from "../styles/Button.module.css";
 import logoImg from "../assets/logo.svg";
+import { useContext, useEffect, useState } from "react";
+import { CartContext } from "../CartContext";
 
 export default function ShoppingCartPage() {
+  const { cartItems, setCartItems } = useContext(CartContext);
   return (
     <>
       <header>
@@ -14,7 +17,10 @@ export default function ShoppingCartPage() {
           <Link to="/">Home</Link>
         </div>
       </header>
-      <div id="content"></div>
+      <div id="content">
+        <div id="shopItemContainer"></div>
+        <div id="shopPriceBox"></div>
+      </div>
       <footer></footer>
     </>
   );
